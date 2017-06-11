@@ -7,7 +7,7 @@ puts "Enter the name of the second player"
 player2 = gets.chomp
 again = true
 loop do
-  current_game = Games.new(player1,player2)
+  current_game = Game.new(player1,player2)
   again = current_game.start
 
   break if !again
